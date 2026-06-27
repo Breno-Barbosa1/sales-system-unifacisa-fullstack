@@ -1,0 +1,6 @@
+{
+  "name": "Painel de Vendas Unifacisa",
+  "description": "Console React para integração, testes e gerenciamento de Funcionários, Produtos e Vendas conectado via API REST (Spring Boot).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
