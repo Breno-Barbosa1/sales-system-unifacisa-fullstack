@@ -1,0 +1,4 @@
+web: mkdir -p target/classes && \
+echo "$JWT_PUBLIC_KEY" > target/classes/public_key.pem && \
+echo "$JWT_PRIVATE_KEY" > target/classes/private_key.pem && \
+java -jar target/*.jar
