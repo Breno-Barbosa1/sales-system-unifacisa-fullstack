@@ -33,7 +33,9 @@ import { SalesTab } from "./components/SalesTab";
 
 export default function App() {
   // App settings
-  const [apiBaseUrl, setApiBaseUrl] = useState<string>("http://localhost:8080");
+  const [apiBaseUrl] = useState<string>(
+    (import.meta as any).env.VITE_API_URL
+  );
   const [activeTab, setActiveTab] = useState<"employees" | "products" | "sales">("sales");
 
   // State lists
