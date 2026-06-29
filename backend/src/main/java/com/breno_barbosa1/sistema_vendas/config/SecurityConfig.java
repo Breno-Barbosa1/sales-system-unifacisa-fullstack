@@ -71,7 +71,7 @@ public class SecurityConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-            .allowedOrigins("http://localhost:3000", "http://localhost:8080", "https://sales-system-unifacisa-fullstack-fr.vercel.app/")
+            .allowedOrigins("http://localhost:3000", "http://localhost:8080", "https://sales-system-unifacisa-fullstack-frontend-nqeya9u0s-breno23.vercel.app")
             .allowedMethods("*")
             .allowedHeaders("*")
             .allowCredentials(true)
