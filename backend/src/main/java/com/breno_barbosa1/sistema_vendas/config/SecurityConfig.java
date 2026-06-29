@@ -47,7 +47,7 @@ public class SecurityConfig implements WebMvcConfigurer {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
             .csrf(AbstractHttpConfigurer::disable)
-            .cors(Customizer.withDefaults())
+            .cors(cors -> cors.configurationSource(corsConfigurationSource()))
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/api/login").permitAll()
                 .anyRequest().authenticated()
@@ -80,11 +80,11 @@ public class SecurityConfig implements WebMvcConfigurer {
         configuration.setAllowedOrigins(Arrays.asList(
                 "http://localhost:3000",
                 "http://localhost:8080",
-                "https://sales-system-unifacisa-fullstack-frontend.vercel.app" // Your production Vercel URL
+                "https://sales-system-unifacisa-fullstack-fr.vercel.app"
         ));
 
-        configuration.setAllowedOriginPatterns(Arrays.asList(
-                "https://*-breno23.vercel.app" // Catches all dynamically generated Vercel preview URLs
+        configuration.setAllowedOriginPatterns(List.of(
+                "https://*.vercel.app"
         ));
 
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
