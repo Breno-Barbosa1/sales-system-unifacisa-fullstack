@@ -201,7 +201,6 @@ export function SalesTab({
         ) : (
           <div className="space-y-4 font-mono text-xs text-white">
             {sales.map((sale) => (
-              console.log("sale", sale),
               <div key={sale.id} className="p-4 border border-white/5 bg-zinc-900/30 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-white/15 transition-all">
                 
                 <div className="space-y-1.5 min-w-0">
