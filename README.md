@@ -4,6 +4,15 @@ and an employee with admin access can perform Create, Update and Delete operatio
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://sales-system-unifacisa-fullstack-fr.vercel.app/)
 [![Backend API](https://img.shields.io/badge/API-Online-blue)](https://comfortable-celebration-production-62bc.up.railway.app/)
 
+## Demo Accounts
+
+Default users for testing:
+
+| Role | Email | Password |
+|------|-------|----------|
+| Admin | admin@mail.com | admin123 |
+| Employee | employee@mail.com | admin123 |
+
 ## Technologies Used and Version:
 
 ### Backend
